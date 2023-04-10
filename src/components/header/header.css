@@ -1,0 +1,30 @@
+.header {
+   font-family: 'Russo One', sans-serif;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding: 140px 0 25px;
+}
+
+.header {
+   color: #fff;
+   background-image: url('../../assets/bg.jpg');
+}
+
+body.dark .header {
+   color: #fff;
+   background-image: url('../../assets/night-bg.jpg');
+}
+
+.header__data {
+   font-weight: 400;
+   text-align: right;
+}
+
+.header__data-day {
+   font-size: 22px;
+}
+
+.header__data-time {
+   font-size: 48px;
+}

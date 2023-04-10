@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #EEEEEE;
+  color: #000;
+}
+
+body.dark {
+  background-color: #121218;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  max-width: 1000px;
+  margin: 100px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-box-shadow: -1px 14px 34px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 14px 34px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 14px 34px -13px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+.todo {
+  background-color: #fff;
+}
+
+body.dark .todo {
+  background-color: #181925;
+  color: #fff;
+}
+
+.todo__top {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.todo__bottom {
+  padding: 35px 0;
+}
+
+.todo__bottom span {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+@media (max-width: 1000px) {
+  body {
+    background-color: #fff;
+  }
+  body.dark {
+    background-color: #181925;
+  }
+  .App {
+    width: 100%;
+    margin: 0 auto;
+    border-radius:0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,44 @@
+.todo__form {
+   display: flex;
+   width: 60%;
+   gap: 5px;
+}
+
+.todo__form-input {
+   background-color: #EBEFF2;
+   border-radius: 5px;
+   border: none;
+   width: 100%;
+   padding: 15px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #404040;
+}
+
+.todo__form-input::placeholder {
+   font-weight: 400;
+   font-size: 16px;
+   color: #888888;
+}
+
+.todo__form-btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   background-color: #20EEB0;
+   transition: all .3s;
+   border-radius: 5px;
+}
+
+body.dark .todo__form-btn {
+   background-color: #7a4782;
+}
+
+body.dark .todo__form-btn:hover {
+   background-color: #a66eae;
+}
+
+.todo__form-btn:hover {
+   background-color: #10cf96;
+}

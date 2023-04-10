@@ -1,0 +1,84 @@
+.todo__item {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   margin-bottom: 30px;
+}
+
+.todo__itemitem:last-child {
+   margin-bottom: 0;
+}
+
+.todo__item_completed .todo__item-text {
+   text-decoration: line-through;
+}
+
+.todo__item-text {
+   color: #0D0D0D;
+
+}
+
+body.dark .todo__item-text {
+   color: #fff;
+}
+
+.todo__item-text {
+   font-size: 18px;
+   font-weight: 500;
+   margin-bottom: 5px;
+}
+
+.todo__item-data {
+   font-size: 14px;
+   color: #888888;
+}
+
+.todo__item-buttons {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.todo__item-check {
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   border: 2.5px solid #20EEB0;
+
+   position: relative;
+}
+
+body.dark .todo__item-check {
+   border: 2.5px solid #7a4782;
+}
+
+body.dark .todo__item-check::after {
+   background-color: #7a4782;
+}
+
+.todo__item-check::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 15px;
+   height: 15px;
+   background-color: #20EEB0;
+   border-radius: 50%;
+   opacity: 0;
+   transition: all .3s;
+}
+
+.todo__item_completed .todo__item-check::after {
+   opacity: 1;
+}
+
+.todo__item-delete svg {
+   transition: all .3s;
+}
+
+.todo__item-delete:hover svg {
+   stroke: red;
+}
